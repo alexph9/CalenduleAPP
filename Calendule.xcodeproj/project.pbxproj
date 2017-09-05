@@ -24,6 +24,7 @@
 		2CF7C47E1F594CCF0031B6A6 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7C47D1F594CCF0031B6A6 /* CustomCell.swift */; };
 		67D2A84FDF918C3C423C0DD3 /* Pods_Calendule_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A317FD6E4717091B1FF567 /* Pods_Calendule_WatchKit_Extension.framework */; };
 		EEA01A1BB475A8530C97390A /* Pods_Calendule_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7E75CFCA66FBDF2BF6858E /* Pods_Calendule_WatchKit_App.framework */; };
+		FAB64E191F5E875700029BBA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB64E181F5E875700029BBA /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		C8A317FD6E4717091B1FF567 /* Pods_Calendule_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendule_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8881E5D602D8135085A2E2A /* Pods-Calendule WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendule WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calendule WatchKit App/Pods-Calendule WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		EF7E75CFCA66FBDF2BF6858E /* Pods_Calendule_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendule_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB64E181F5E875700029BBA /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				2CF7C44B1F59467C0031B6A6 /* LaunchScreen.storyboard */,
 				2CF7C44E1F59467C0031B6A6 /* Info.plist */,
 				2CF7C47D1F594CCF0031B6A6 /* CustomCell.swift */,
+				FAB64E181F5E875700029BBA /* MainView.swift */,
 			);
 			path = Calendule;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF7C4451F59467C0031B6A6 /* ViewController.swift in Sources */,
+				FAB64E191F5E875700029BBA /* MainView.swift in Sources */,
 				2CF7C47E1F594CCF0031B6A6 /* CustomCell.swift in Sources */,
 				2CF7C4431F59467C0031B6A6 /* AppDelegate.swift in Sources */,
 			);

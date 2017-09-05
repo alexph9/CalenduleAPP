@@ -52,12 +52,12 @@
 		133A2DF18E9D0554FA3B75276443712E /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
 		18EDFDB73454A1792B4162078419D496 /* Pods-Calendule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calendule-dummy.m"; sourceTree = "<group>"; };
 		193581E11F8EE172B6021717954214FB /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
-		1BBA78F78F9109F2D5CD49D8D405B58A /* Pods-Calendule WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Calendule WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		1BBA78F78F9109F2D5CD49D8D405B58A /* Pods-Calendule WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Calendule WatchKit Extension.modulemap"; sourceTree = "<group>"; };
 		1DFC6107E350347C1F226C093D92B00C /* Pods-Calendule WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calendule WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1F0C5AF69003327F49AA96556CA3BEB3 /* Pods_Calendule_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendule_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0C5AF69003327F49AA96556CA3BEB3 /* Pods_Calendule_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Calendule_WatchKit_Extension.framework; path = "Pods-Calendule WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2490A6AE828CD3A920B579603331345B /* Pods-Calendule-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calendule-frameworks.sh"; sourceTree = "<group>"; };
 		2907EECD1285656229F2F6B9A569A0E2 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
-		2A0A198FACC40E259F5FEFB46C2DFC6A /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		2A0A198FACC40E259F5FEFB46C2DFC6A /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
 		3438D39413B25780B6C65D9623ADDA98 /* Pods-Calendule WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Calendule WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
 		3AEB19846CE756D12622CADACA6BCD5A /* JTAppleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCell.swift; path = Sources/JTAppleCell.swift; sourceTree = "<group>"; };
 		45806521369E19889509E06D5D0DD95B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,10 +65,10 @@
 		46E08C454EBC5103266D8071E7B40005 /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
 		53AA4A16E266AB424A909AA5CF4BC6C2 /* Pods-Calendule WatchKit Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calendule WatchKit Extension-resources.sh"; sourceTree = "<group>"; };
 		5604EB6307A5B30C87DCD44E1128D970 /* Pods-Calendule WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calendule WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
-		582DD095F32D5D5149FE246442403CC4 /* Pods_Calendule_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendule_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		582DD095F32D5D5149FE246442403CC4 /* Pods_Calendule_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Calendule_WatchKit_App.framework; path = "Pods-Calendule WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		604F54833F62AD42772FFEA600F26E29 /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
 		62CA2977B3127FFA4BD59356AE6ADC0C /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
-		6788D1C6C7395F8D333CF9B1D6D9A938 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6788D1C6C7395F8D333CF9B1D6D9A938 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B27C5A361AF280870D705D916989E00 /* Pods-Calendule-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calendule-acknowledgements.plist"; sourceTree = "<group>"; };
 		754FC81338ED53149A1BE4BDDE06D2BC /* Pods-Calendule WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calendule WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
 		7580EDE0B2AC3CFC4AABF8402BEEF508 /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
@@ -79,15 +79,15 @@
 		7F6C7D6F28A65B289AE9F6EC2220EB99 /* Pods-Calendule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calendule.debug.xcconfig"; sourceTree = "<group>"; };
 		824621895A181F7A112FB0C03CA6B382 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
 		909987A20944C57E10FE1727C5E6FF94 /* Pods-Calendule WatchKit App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calendule WatchKit App-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96E93007E4DE45BFD790DADB97DC86A9 /* Pods-Calendule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Calendule.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96E93007E4DE45BFD790DADB97DC86A9 /* Pods-Calendule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Calendule.modulemap"; sourceTree = "<group>"; };
 		9996D92F9ABEEE33E73CF259BF6B4748 /* Pods-Calendule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Calendule-umbrella.h"; sourceTree = "<group>"; };
-		9C91912FFA47C3FA4BAA043F5E18DB0D /* Pods-Calendule WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Calendule WatchKit App.modulemap"; sourceTree = "<group>"; };
+		9C91912FFA47C3FA4BAA043F5E18DB0D /* Pods-Calendule WatchKit App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Calendule WatchKit App.modulemap"; sourceTree = "<group>"; };
 		9D0F673B989D5FA0B416A79B7DB31BBD /* Pods-Calendule-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calendule-resources.sh"; sourceTree = "<group>"; };
 		9D687395FE604333728C9259DD5B0686 /* Pods-Calendule WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Calendule WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A219E5B365AE60E57986CC406FFB0417 /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
 		A31F5796EA2BBAB8D22F71EA2FC201E2 /* Pods-Calendule WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Calendule WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
-		A6009B7C3C625752601316E71CCF5C72 /* Pods_Calendule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6009B7C3C625752601316E71CCF5C72 /* Pods_Calendule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Calendule.framework; path = "Pods-Calendule.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB09EB687E558902F25B3F2C4477A5E4 /* Pods-Calendule WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calendule WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		ADBB0A4B9AF9129B0CCE9AE92EF0B5D4 /* Pods-Calendule WatchKit Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Calendule WatchKit Extension-frameworks.sh"; sourceTree = "<group>"; };
 		C2A7D8C1C74D22091AF267307CED786F /* Pods-Calendule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Calendule.release.xcconfig"; sourceTree = "<group>"; };
@@ -206,6 +206,7 @@
 				133A2DF18E9D0554FA3B75276443712E /* UserInteractionFunctions.swift */,
 				53BF9057FA31EF23A64316BBB1DA0262 /* Support Files */,
 			);
+			name = JTAppleCalendar;
 			path = JTAppleCalendar;
 			sourceTree = "<group>";
 		};
@@ -548,7 +549,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -790,7 +791,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
