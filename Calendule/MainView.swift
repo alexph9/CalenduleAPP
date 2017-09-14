@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class MainView: UIViewController {
+    
+    @IBOutlet weak var logOutButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,5 +34,23 @@ class MainView: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func logOut(_ sender: Any) {
+        if Auth.auth().currentUser != nil {
+            print(Auth.auth().currentUser!)
+            do {
+                try? Auth.auth().signOut()
 
+            } catch let logOutError {
+                print(logOutError)
+            }
+        }
+        print(Auth.auth().currentUser)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let signInVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        self.present(signInVC, animated: true, completion: nil)
+        
+    }
+    
 }

@@ -88,7 +88,7 @@ extension ViewController: JTAppleCalendarViewDataSource {
         formatter.timeZone = Calendar.current.timeZone
         formatter.locale = Calendar.current.locale
         
-        let startDate = formatter.date(from: "2017 01 01")!
+        let startDate = formatter.date(from: "2017 09 01")!
         let endDate = formatter.date(from: "2060 12 31")!
         //let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
         let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate, numberOfRows: nil, calendar: nil, generateInDates: nil, generateOutDates: nil, firstDayOfWeek: DaysOfWeek.monday, hasStrictBoundaries: nil)

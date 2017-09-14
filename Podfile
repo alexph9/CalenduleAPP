@@ -7,6 +7,10 @@ target 'Calendule' do
 
   # Pods for Calendule
   pod ‘JTAppleCalendar’, :git => ‘https://github.com/patchthecode/JTAppleCalendar.git’, :branch => ‘7.0.0’
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  
 end
 
 target 'Calendule WatchKit App' do
