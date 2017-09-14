@@ -59,9 +59,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="mlH-bG-47Q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="mlH-bG-47Q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izH-C2-Zaz">
                                 <rect key="frame" x="109" y="301" width="156" height="64"/>
@@ -91,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYq-iO-Ura">
-                                <rect key="frame" x="267" y="28" width="92" height="30"/>
+                                <rect key="frame" x="267" y="68" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cerrar sesión">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,6 +101,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mlH-bG-47Q" firstAttribute="leading" secondItem="P8T-Hp-ACK" secondAttribute="leading" id="2gd-5c-Vfz"/>
+                            <constraint firstAttribute="trailing" secondItem="mlH-bG-47Q" secondAttribute="trailing" id="Cdi-vB-f7e"/>
+                            <constraint firstItem="4lC-ed-3Yx" firstAttribute="top" secondItem="mlH-bG-47Q" secondAttribute="bottom" id="NvM-L9-gYX"/>
+                            <constraint firstItem="mlH-bG-47Q" firstAttribute="top" secondItem="P8T-Hp-ACK" secondAttribute="top" id="zyz-cb-zXY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1rF-Kd-8sY"/>
                     <connections>
@@ -287,7 +292,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="528-fA-8DB" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="7L3-se-3yn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7L3-se-3yn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
