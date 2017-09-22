@@ -37,7 +37,7 @@ class MainView: UIViewController {
     
     @IBAction func logOut(_ sender: Any) {
         if Auth.auth().currentUser != nil {
-            print(Auth.auth().currentUser!)
+            print("Main 1 \(Auth.auth().currentUser!)")
             do {
                 try? Auth.auth().signOut()
 
@@ -45,12 +45,16 @@ class MainView: UIViewController {
                 print(logOutError)
             }
         }
-        print(Auth.auth().currentUser)
+        print("Main 2 \(Auth.auth().currentUser)")
         
+        /*
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let signInVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
         self.present(signInVC, animated: true, completion: nil)
+        */
         
+        //Al cerrar esta vista, vuelve a la pantalla de inicio cerrando la sesion de la cuenta de Google
+        dismiss(animated: true, completion: nil)
     }
     
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12892981DA104E90C7ED43F3 /* Pods_Calendule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A927FD7CA78BE6F4AD4FD439 /* Pods_Calendule.framework */; };
+		2CCE2A081F74F1EF0043692B /* HorarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE2A071F74F1EF0043692B /* HorarioViewController.swift */; };
 		2CDBE40E1F5E902400334519 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CDBE40D1F5E902400334519 /* GoogleService-Info.plist */; };
 		2CDBE4111F5EB59D00334519 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDBE4101F5EB59D00334519 /* LoginViewController.swift */; };
 		2CF7C4431F59467C0031B6A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF7C4421F59467C0031B6A6 /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 		001C8847419DEA02EB552AAC /* Pods-Calendule WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendule WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calendule WatchKit Extension/Pods-Calendule WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		0D506DE1278B877D62899E93 /* Pods-Calendule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calendule/Pods-Calendule.debug.xcconfig"; sourceTree = "<group>"; };
 		276752231560EC4A6268A60F /* Pods-Calendule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendule.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calendule/Pods-Calendule.release.xcconfig"; sourceTree = "<group>"; };
+		2CCE2A071F74F1EF0043692B /* HorarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioViewController.swift; sourceTree = "<group>"; };
 		2CDBE40D1F5E902400334519 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2CDBE40F1F5E971900334519 /* Calendule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calendule.entitlements; sourceTree = "<group>"; };
 		2CDBE4101F5EB59D00334519 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				2CF7C47D1F594CCF0031B6A6 /* CustomCell.swift */,
 				FAB64E181F5E875700029BBA /* MainView.swift */,
 				2CDBE4101F5EB59D00334519 /* LoginViewController.swift */,
+				2CCE2A071F74F1EF0043692B /* HorarioViewController.swift */,
 			);
 			path = Calendule;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				2CF7C47E1F594CCF0031B6A6 /* CustomCell.swift in Sources */,
 				2CDBE4111F5EB59D00334519 /* LoginViewController.swift in Sources */,
 				2CF7C4431F59467C0031B6A6 /* AppDelegate.swift in Sources */,
+				2CCE2A081F74F1EF0043692B /* HorarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

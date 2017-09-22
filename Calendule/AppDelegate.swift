@@ -33,16 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     }
     
-    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
     
-        // ...
         if let error = error {
             print(error.localizedDescription)
             return
         }
         
-        print("user signed into google")
+        print("User signed into Google")
         
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
@@ -50,20 +48,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // ...
         Auth.auth().signIn(with: credential) { (user, error) in
             
-            
             if let error = error {
                 print(error.localizedDescription)
                 return
             }
             
-            print("user signed into firebase")
+            print("User signed into Firebase")
             
-            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
-            self.window?.rootViewController?.performSegue(withIdentifier: "MainViewSegue", sender: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "MainView")
+            
+            self.window?.rootViewController?.present(vc, animated: true, completion: nil)
+            
+            print("Cambio")
+            //let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            //self.window?.rootViewController?.performSegue(withIdentifier: "MainViewSegue", sender: nil)
         }
-            // User is signed in
-            // ...
     }
  
     

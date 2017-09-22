@@ -20,7 +20,9 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().uiDelegate = self
         //GIDSignIn.sharedInstance().signIn()
         // Do any additional setup after loading the view.
-        self.logOut()
+        
+        //Ya no hace falta
+        //self.logOut()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +30,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -39,6 +40,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
     }
     */
     
+    /* Ya no haria falta esta funcion
     func logOut() {
         
         if Auth.auth().currentUser != nil {
@@ -51,6 +53,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate {
         }
         print("After: Login View \(Auth.auth().currentUser)")
     }
-    
+    */
     
 }

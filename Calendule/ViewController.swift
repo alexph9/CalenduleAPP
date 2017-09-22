@@ -9,6 +9,13 @@
 import UIKit
 import JTAppleCalendar
 
+class CustomCellCalendar: UITableViewCell {
+    
+    @IBOutlet weak var horaCalendar: UILabel!
+    @IBOutlet weak var contenidoCalendar: UILabel!
+    
+}
+
 class ViewController: UIViewController {
 
     let formatter = DateFormatter()
@@ -16,6 +23,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var month: UILabel!
+    
+    @IBOutlet weak var tableViewCalendar: UITableView!
     
     let outsideMonthColor = UIColor(colorWithHexValue: 0x584a66)
     let monthColor = UIColor.white
@@ -25,11 +34,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCalendarView()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         calendarView.visibleDates {
             (visibleDates) in
             self.setupViewsOfCalendar(from: visibleDates)
         }
+        
+        self.tableViewCalendar.dataSource = self
+        self.tableViewCalendar.delegate = self
     }
     
     func setupCalendarView() {
@@ -37,6 +49,7 @@ class ViewController: UIViewController {
         calendarView.minimumLineSpacing = 0
     }
     
+    //Indica si la celda ha sido seleccionada
     func handleCellSelected (view: JTAppleCell?, cellState: CellState) {
         guard let validCell = view as? CustomCell else { return }
         
@@ -49,6 +62,7 @@ class ViewController: UIViewController {
         }
     }
 
+    //Cambia el color del texto de la celda
     func handleCellTextColor (view: JTAppleCell?, cellState: CellState) {
         guard let validCell = view as? CustomCell else { return }
         
@@ -63,6 +77,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //Muestra el mes y el año en el que se encuentra el usuario
     func setupViewsOfCalendar (from visibleDates: DateSegmentInfo) {
         let date = visibleDates.monthDates.first!.date
         
@@ -77,8 +92,32 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    //Cierra el horario y vuelve al menú principal
+    @IBAction func dismissVC(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 
 }
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        //Aqui se contarian el numero de actividades de un dia y se mostrarian solamente esas actividades
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableViewCalendar.dequeueReusableCell(withIdentifier: "CustomCellCalendar", for: indexPath) as! CustomCellCalendar
+        
+        cell.horaCalendar?.text = "\(indexPath.row):00"
+        cell.contenidoCalendar?.text = "Contenido \(indexPath.row)"
+        
+        return cell
+    }
+}
+
 
 extension ViewController: JTAppleCalendarViewDataSource {
 
@@ -90,18 +129,17 @@ extension ViewController: JTAppleCalendarViewDataSource {
         
         let startDate = formatter.date(from: "2017 09 01")!
         let endDate = formatter.date(from: "2060 12 31")!
-        //let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
+        
         let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate, numberOfRows: nil, calendar: nil, generateInDates: nil, generateOutDates: nil, firstDayOfWeek: DaysOfWeek.monday, hasStrictBoundaries: nil)
         
         return parameters
     }
-    
-    
 }
 
 extension ViewController: JTAppleCalendarViewDelegate {
     
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
+        
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "Cell", for: indexPath) as! CustomCell
         cell.dateLabel.text = cellState.text
         
@@ -109,15 +147,18 @@ extension ViewController: JTAppleCalendarViewDelegate {
         handleCellTextColor(view: cell, cellState: cellState)
         
         return cell
+        
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        
         handleCellSelected(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
 
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
+        
         handleCellSelected(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
 
